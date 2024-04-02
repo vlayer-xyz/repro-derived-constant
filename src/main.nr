@@ -1,7 +1,4 @@
-mod B;
-mod const;
+global L1: u64 = 1;
+global L2: u64 = L1 + 1;
 
-use crate::const::L1 as L2;
-use crate::B::L1;
-
-type T = [u8; L1];
+type T = [u8; L2];
